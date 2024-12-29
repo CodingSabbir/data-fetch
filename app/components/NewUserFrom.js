@@ -1,4 +1,5 @@
 import { addUser } from "@/action/User";
+import Button from "./ui/Button";
 export default function NewUser() {
   return (
     <form action={addUser}>
@@ -24,12 +25,7 @@ export default function NewUser() {
             />
           </div>
           <div className="mt-2">
-            <button
-              className="bg-teal-400 w-full text-black rounded-sm p-2"
-              type="submit"
-            >
-              Submit
-            </button>
+          <Button/>
           </div>
         </div>
       </div>
